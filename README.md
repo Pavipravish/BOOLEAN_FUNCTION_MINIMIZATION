@@ -1,9 +1,9 @@
 
 ### EXPERIMENT-2-BOOLEAN_FUNCTION_MINIMIZATION
 
-### NAME: PRAVISH.J
+DEVELOPED BY: PRAVISH.J
+REG NO:2401067
 
-### REGISTER NUMBER: 240901067
 
 **AIM:**
 
@@ -43,11 +43,25 @@ check outputs against expected results.
 
 5.	For different input combinations generate the timing diagram.
 
+developed by: pravish.J 
+Reg no: 24901067
 
 **PROGRAM:**
 
 
-![Screenshot 2024-12-12 173029](https://github.com/user-attachments/assets/f97d498c-1b75-43fc-8429-8b95ae1b189c)
+module funct1(a,b,c,d,f1);
+input a,b,c,d;
+output f1;
+assign f1=((~b & ~d)|(~a & b & d)|(a & b & ~c));
+endmodule
+
+2;
+module funct2(w,x,y,z,f2);
+input w,x,y,z;
+output f2;
+assign f2=((~y & z)|( w & y )|(x & y));
+endmodule
+
 
 
 **TRUTH TABLE:**
