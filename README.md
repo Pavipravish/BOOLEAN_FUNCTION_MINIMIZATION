@@ -63,12 +63,6 @@ assign f2=((~y & z)|( w & y )|(x & y));
 endmodule
 
 
-
-**TRUTH TABLE:**
-
-![Screenshot 2024-12-12 102513](https://github.com/user-attachments/assets/e49f4c29-bc39-4300-adee-c7add53c5e8b)
-
-
 **RTL REALIZATION:**
 
 
