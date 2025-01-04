@@ -62,9 +62,9 @@ Hardware – PCs, Cyclone II , USB flasher
  
  endmodule
 
-Developed by:JEEVIKA R
+Developed by:Pravish j
 
-RegisterNumber:24900508
+RegisterNumber:24901067
 
 **Output:**
 
