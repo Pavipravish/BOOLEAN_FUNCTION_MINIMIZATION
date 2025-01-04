@@ -1,9 +1,8 @@
+# BOOLEAN_FUNCTION_MINIMIZATION
 
-### EXPERIMENT-2-BOOLEAN_FUNCTION_MINIMIZATION
+EXP-2
 
-DEVELOPED BY: PRAVISH.J
-REG NO:2401067
-
+DATE-1-10-2024
 
 **AIM:**
 
@@ -13,25 +12,17 @@ F1= A’B’C’D’+AC’D’+B’CD’+A’BCD+BC’D
 
 F2=xy’z+x’y’z+w’xy+wx’y+wxy
 
-**EQUIPMENTS REQUIRED:**
+**Equipment Required:**
 
 Hardware – PCs, Cyclone II , USB flasher
 
 **Software – Quartus prime**
 
-**THEORY:**
+**Theory**
 
-Implementing Boolean functions in Verilog HDL (Hardware Description Language)
-involves translating the simplified Boolean expressions into Verilog code to describe the
-behavior of digital circuits. The basic building blocks in Verilog is module. The module
-represent a combinationa circuit. Use logical operators (&, , ~, ^) to implement Boolean
-functions directly. Use built-in gate primitives for basic functions: Use University
-program VWF to verify the functionality of your Verilog modules. Create waveform and
-check outputs against expected results.
+**Logic Diagram**
 
-
-
-**PROCEDURE:**
+**Procedure**
 
 1.	Type the program in Quartus software.
 
@@ -43,38 +34,72 @@ check outputs against expected results.
 
 5.	For different input combinations generate the timing diagram.
 
-developed by: pravish.J 
-Reg no: 24901067
 
-**PROGRAM:**
+**Program:**
+
+/* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. */
+ **program f1**
+ 
+ module logic1(a,b,c,d,f1);
+ 
+ input a,b,c,d;
+ 
+ output f1;
+ 
+ assign f1=((~b & ~d)|(~a & b & d)|(a & b & ~c));
+ 
+ endmodule
+
+**program f2**
+ 
+ module logic3(w,x,y,z,f2);
+ 
+ input w,x,y,z;
+ 
+ output f2;
+ 
+ assign f2=((~y & z)|( w & y )|(x & y));
+ 
+ endmodule
+
+Developed by:JEEVIKA R
+
+RegisterNumber:24900508
+
+**Output:**
+
+**RTL realization**
+
+![image](https://github.com/user-attachments/assets/8f1ff8da-efc0-40c8-a9fd-e3dd7d73df96)
+
+**Timing Diagram**
+
+![image](https://github.com/user-attachments/assets/e21c06b0-2900-49d8-8c0f-a511aac5d865)
+
+**PROGRAM F2**
+
+**RTL realization**
+
+![image](https://github.com/user-attachments/assets/b7ffc502-77fb-4ae6-83be-0d6b1db9e853)
 
 
-module funct1(a,b,c,d,f1);
-input a,b,c,d;
-output f1;
-assign f1=((~b & ~d)|(~a & b & d)|(a & b & ~c));
-endmodule
+**Timing Diagram**
 
-2;
-module funct2(w,x,y,z,f2);
-input w,x,y,z;
-output f2;
-assign f2=((~y & z)|( w & y )|(x & y));
-endmodule
+![image](https://github.com/user-attachments/assets/20fcf71c-388f-42c3-8e9e-8c2f9917b9ad)
 
+**TRUTH TABLE**
 
-**RTL REALIZATION:**
+![image](https://github.com/user-attachments/assets/96cbf89e-238f-4af4-9683-1f2b26cf3817)
 
+![image](https://github.com/user-attachments/assets/89173674-e0df-481f-bd4f-23a7b8059b0b)
 
+**BOOLEAN MINIMIZATION**
+
+![image](https://github.com/user-attachments/assets/5504919a-b017-4248-87bb-a025872b982f)
+
+![image](https://github.com/user-attachments/assets/60ed48fb-7897-4feb-bb52-ff99842fadef)
 
 
-![Screenshot 2024-12-12 102714](https://github.com/user-attachments/assets/5da34538-e3a3-4a7f-9fa8-5472d6729833)
+**Result:**
 
-**TIMING DIAGRAM:**
-
-
-![Screenshot 2024-12-12 173231](https://github.com/user-attachments/assets/9397b919-7ad6-410a-aa88-af9d370a38f5)
-
-**RESULT:**
-
-Thus the given logic functions are implemented using QUARTUS and their operations are verified using Verilog programming.
+Thus the given logic functions are implemented using and their operations are verified using Verilog programming.
