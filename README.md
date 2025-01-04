@@ -1,9 +1,5 @@
 # BOOLEAN_FUNCTION_MINIMIZATION
 
-EXP-2
-
-DATE-1-10-2024
-
 **AIM:**
 
 To implement the given logic function verify its operation in Quartus using Verilog programming.
@@ -34,71 +30,55 @@ Hardware – PCs, Cyclone II , USB flasher
 
 5.	For different input combinations generate the timing diagram.
 
+**Boolean Minimization**
+## F1
+![WhatsApp Image 2024-12-23 at 08 38 07_7a5e7434](https://github.com/user-attachments/assets/7e40e511-1c44-499d-ba77-d1d6242f1dc3)
+## F2
+![WhatsApp Image 2024-12-23 at 08 38 07_1db6be56](https://github.com/user-attachments/assets/7baa26d5-9442-4f0e-a9d8-66502eb670c0)
+
+
+
+**Truth Table**
+![WhatsApp Image 2024-12-23 at 08 38 30_38445c90](https://github.com/user-attachments/assets/386e57f8-518a-4f9f-91f0-f894f1e2bba4)
 
 **Program:**
 
-/* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. */
- **program f1**
- 
- module logic1(a,b,c,d,f1);
- 
- input a,b,c,d;
- 
- output f1;
- 
- assign f1=((~b & ~d)|(~a & b & d)|(a & b & ~c));
- 
- endmodule
+/* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
+## F1
+```
+module DE2(a,b,c,d,f1);
+input a,b,c,d;
+output f1;
+assign f1=((~b & ~d)|(~a & b & d)|(a & b & ~c));
+endmodule
+```
+## F2
+```
+module DE2(w,x,y,z,f2);
+input w,x,y,z;
+output f2;
+assign f2=((~y & z)|( w & y )|(x & y));
+endmodule
+```
 
-**program f2**
- 
- module logic3(w,x,y,z,f2);
- 
- input w,x,y,z;
- 
- output f2;
- 
- assign f2=((~y & z)|( w & y )|(x & y));
- 
- endmodule
-
-Developed by:Pravish j
-
+Developed by:PRAVISH J
 RegisterNumber:24901067
 
+
+**RTL realization**
+## F1
+![image](https://github.com/user-attachments/assets/0b0362ed-c35d-414f-ade0-89a440f16682)
+## F2
+![image](https://github.com/user-attachments/assets/551d9b9c-3d34-4cf7-a931-83b8d1e129bb)
+
+
+
 **Output:**
-
-**RTL realization**
-
-![image](https://github.com/user-attachments/assets/8f1ff8da-efc0-40c8-a9fd-e3dd7d73df96)
-
-**Timing Diagram**
-
-![image](https://github.com/user-attachments/assets/e21c06b0-2900-49d8-8c0f-a511aac5d865)
-
-**PROGRAM F2**
-
-**RTL realization**
-
-![image](https://github.com/user-attachments/assets/b7ffc502-77fb-4ae6-83be-0d6b1db9e853)
-
-
-**Timing Diagram**
-
-![image](https://github.com/user-attachments/assets/20fcf71c-388f-42c3-8e9e-8c2f9917b9ad)
-
-**TRUTH TABLE**
-
-![image](https://github.com/user-attachments/assets/96cbf89e-238f-4af4-9683-1f2b26cf3817)
-
-![image](https://github.com/user-attachments/assets/89173674-e0df-481f-bd4f-23a7b8059b0b)
-
-**BOOLEAN MINIMIZATION**
-
-![image](https://github.com/user-attachments/assets/5504919a-b017-4248-87bb-a025872b982f)
-
-![image](https://github.com/user-attachments/assets/60ed48fb-7897-4feb-bb52-ff99842fadef)
-
+**Waveform**
+## F1
+![image](https://github.com/user-attachments/assets/b591e927-bf30-4da5-8840-3ed6089d4bde)
+## F2
+![image](https://github.com/user-attachments/assets/cd359de1-a025-4d60-aa41-ba6538883eb5)
 
 **Result:**
 
